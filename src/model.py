@@ -13,14 +13,14 @@ def Build_model():
     base_model.trainable = False
 
     x = base_model.output
-    x = GlobalAveragePooling2D(x)
+    x = GlobalAveragePooling2D()(x)
 
     x = Dense(128,activation = 'relu')(x)
     x = Dropout(0.3)(x)
 
     age_output = Dense(1,activation = 'linear', name = 'age_output')(x)
 
-    gender_output = Dense(2,activation = 'sigmoid', name = 'gender_output')(x)
+    gender_output = Dense(1,activation = 'sigmoid', name = 'gender_output')(x)
 
 
     model = Model(inputs= base_model.input,outputs = [age_output,gender_output])
