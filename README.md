@@ -52,21 +52,6 @@ https://susanqq.github.io/UTKFace/
 
 ---
 
-## Model Architecture
-
-Input Image (224×224×3)
-↓
-MobileNetV2 (Pretrained)
-↓
-GlobalAveragePooling2D
-↓
-Dense(128, ReLU)
-↓
-Dropout(0.3)
-↓
-├── Age Head → Dense(1)
-└── Gender Head → Dense(1, Sigmoid)
-
 ### Loss Functions
 
 Age Prediction:
