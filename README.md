@@ -213,5 +213,3 @@ Age prediction remains a challenging task due to variations in lighting, facial 
 ## Author
 
 Yash
-
-Engineering Student | Machine Learning Enthusiast
