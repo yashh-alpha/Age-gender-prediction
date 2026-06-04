@@ -3,9 +3,6 @@ import tensorflow as tf
 import numpy as np
 from PIL import Image
 
-# -----------------------------
-# Load Model
-# -----------------------------
 
 @st.cache_resource
 def load_my_model():
@@ -15,9 +12,6 @@ def load_my_model():
 
 model = load_my_model()
 
-# -----------------------------
-# Image Preprocessing
-# -----------------------------
 
 def preprocess_image(image):
 
@@ -35,9 +29,7 @@ def preprocess_image(image):
     return image
 
 
-# -----------------------------
-# Streamlit UI
-# -----------------------------
+
 
 st.title("Age & Gender Prediction")
 
